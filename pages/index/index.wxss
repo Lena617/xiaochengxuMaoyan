@@ -1,0 +1,196 @@
+/**index.wxss**/
+.swiper-tab{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+width: 100%;
+border-bottom: 2rpx solid #ccc;
+/* text-align: center; */
+ height: 88rpx; 
+ line-height: 88rpx; 
+/* font-weight: bold; */
+}
+.swiper-tab-item{
+display: inline-block;
+/* width: 33.33%; */
+/* color:red; */
+}
+.active{
+color:red;
+border-bottom: 4rpx solid red;
+}
+.image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.img{
+  width: 180rpx;
+  height: 180rpx;
+}
+.img1{
+   width: 240rpx;
+  height: 320rpx;
+}
+.swiper{
+    height:1300rpx; 
+    overflow: auto;
+}
+.moive{
+  display: flex;
+padding: 20rpx;
+border-bottom: 1rpx solid gainsboro;
+}
+.text{
+   font-size: 28rpx; 
+   overFlow-x: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+   color:gray;
+}
+.text2{
+  width:240rpx;
+    font-size: 34rpx; 
+   overFlow-x: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+   /* color:gray; */
+}
+.want{
+ font-size: 32rpx;  
+color:gray;
+}
+.text1{
+   width:300rpx;
+    overFlow-x: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+}
+.textone{
+    width:300rpx;
+    overFlow-x: hidden;
+   text-overflow: ellipsis;
+   white-space:nowrap;
+    font-size: 34rpx;  
+color:gray;
+}
+.dina{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.title{
+  width:300rpx;
+  margin:20rpx 0 0 20rpx;
+}
+.fen{
+  color: gold;
+  width: 250rpx;
+  text-align: center;
+}
+.mai{
+  width: 120rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: white;
+  background: red;
+   margin-top: 20rpx;
+}
+.yu{
+    width: 120rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: white;
+  background:paleturquoise;
+  margin-top: 20rpx;
+}
+.ziti{
+    font-size: 24rpx;
+}
+.tupian{
+  /* height: 1200rpx; */
+  display: flex;  
+  overflow:scroll;  
+  padding:30rpx 0 30rpx 30rpx;
+  border-bottom: 30rpx solid aliceblue;
+
+}
+.item_img{
+    /* float: left; */
+   margin-right: 30rpx; 
+ 
+}
+.huan{
+  padding: 30rpx 0 0 30rpx;
+}
+.img2{
+  width: 180rpx;
+  height: 220rpx;
+}
+.wited1{
+  /* width: 800rpx; */
+  color: yellow;
+}
+.height1{
+  height:1350rpx; 
+  overflow: auto; 
+}
+.day{
+  padding: 10rpx;
+}
+.moive1{
+  display: flex;
+}
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+ 
+.userinfo-nickname {
+  color: #aaa;
+}
+ 
+.usermotto {
+  margin-top: 200px;
+}
+ 
+/**/
+ 
+scroll-view {
+  width: 100%;
+}
+ 
+.item {
+  width: 90%;
+  height: 300rpx;
+  margin: 20rpx auto;
+  background: brown;
+  overflow: hidden;
+}
+ 
+.item .img {
+  width: 430rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+ 
+.title {
+  font-size: 30rpx;
+  display: block;
+  margin: 30rpx auto;
+}
+ 
+.description {
+  font-size: 26rpx;
+  line-height: 15rpx;
+}
+

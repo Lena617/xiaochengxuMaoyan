@@ -1,0 +1,95 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+
+  <view class="head">
+  <view class="pad">
+    <image class="image" src="{{ip+movie.movie_imgAll}}"/>
+    <view class="right">
+      <view class="name1">{{movie.movie_name}}</view>
+       <view class="name2">{{movie.movie_ename}}</view>
+       <view class="want">{{movie.movie_want}}人想看</view>
+       <view class="msg">{{movie.movie_type}}</view>
+       <view class="msg">{{movie.movie_area}}/{{movie.movie_time}}</view>
+        <view class="msg">{{movie.movie_show}}{{movie.movie_area}}</view>
+    </view>
+    </view>
+     <view class="msgAll">
+      <button class="msg1">想看</button>
+      <button class="msg1">评分</button>
+     </view>
+  </view>
+<view class="contentAll">
+      <view wx:if="{{isTrue}}" class="content">{{movie.movie_brief}}</view>
+       <view wx:else class="content1">{{movie.movie_brief}}</view>
+      <view  class="juz">
+          <image wx:if="{{isTrue}}" class="xiala" src="../../image/xiala.png" bindtap="zhankai"/>
+          <image wx:else class="xiala" src="../../image/shang.png" bindtap="zhankai"/>
+         </view>
+  </view>
+  <view class="kong">
+  </view>
+
+  <view>
+      <view>演职人员</view>
+      <view class="textA">
+        <view>
+          <image class="yanyuan" src="{{ip+movie.movie_director_img}}"/>
+          <view  class="text">{{movie.movie_director}}</view>
+          <view  class="text1">导演</view>
+        </view>
+             <view class="textA">
+                <view class="textAll" wx:for="{{movieActor}}" class="right" wx:key="{{index}}">
+                   <image class="yanyuan" src="{{ip+item}}"/>
+                   <view  class="text">{{actorName[index]}}</view>
+                    <view  class="text1">{{actorNameJ[index]}}</view>
+                  </view> 
+              </view>  
+        </view>
+  </view>
+
+   <view class="kong"></view>
+  <view class="piaofang">
+        <view class="piao">票房</view>
+        <view class="paihang">
+          <view>
+            <view class="fang">1</view>
+            <view class="pai">昨日票房排行</view>
+          </view>
+           <view>
+              <view class="fang">53324</view>
+              <view class="pai">首周票房（万）</view>
+          </view>
+            <view>
+              <view class="fang">84659</view>
+              <view class="pai">累计票房（万）</view>
+          </view>
+        </view>
+
+        <view class="kong"></view>
+        <view class="juzhao">
+            <view class="piao">视频和剧照</view>
+            <view class="piao">
+            <text class="length">{{movie_img.length}}</text>
+             <image class="xiala1" src="../../image/you.png" />
+            </view>
+          </view>
+          <view class="dis">
+            <view wx:for="{{movie_img}}" wx:key="{{index}}" >
+                <image class="zp" src="{{ip+item}}" />
+             </view>
+          </view>
+            <view class="kong"></view>
+            <view class="pinlun">
+                  <view class="piao">观众评论</view>
+                  <text class="piao2">写短评</text>
+            </view>
+            <view class="gz"  wx:for="{{movie_userComment}}" wx:key="{{index}}">
+                <image class="tou" src="../../image/tou.png" />
+                <view >
+                    <text class="name">才能飓风</text>
+                    <view class="duanpin">{{item}}</view>
+                </view>
+            </view>
+            <view class="youhui">优惠购票</view>
+   </view>
+
+ 
